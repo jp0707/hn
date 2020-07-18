@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 import Feed from './src/Feed'
 
 const App: () => React$Node = () => {
