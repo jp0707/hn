@@ -4,15 +4,14 @@
  */
 
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Feed from './src/Feed'
 
 const App: () => React$Node = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>
-        👋 Hello world! નમસ્તે! 🙏
-      </Text>
-    </View>
+    <SafeAreaView>
+      <Feed style={{padding: 8}}/>
+    </SafeAreaView>
   );
 };
 
