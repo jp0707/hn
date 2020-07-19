@@ -16,6 +16,7 @@ class Feed extends Component {
   }
 
   getTopStories(page, abortOnError) {
+
     if (this.state.error !== null && !abortOnError) {
       // don't keep loading the page on error.
       return;
@@ -100,8 +101,10 @@ class Feed extends Component {
     const { error, items } = this.state;
     let element;
     // TODO: Handle error properly
+
+    let nav = this.props.navigation;
     const renderItem = ({ item }) => (
-      <FeedItem data={item}/>
+      <FeedItem data={item} navigation={nav}/>
     );
 
     return (
