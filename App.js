@@ -13,7 +13,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
-  console.log("App");
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="HomeScreen">
@@ -24,7 +23,8 @@ const App: () => React$Node = () => {
         />
         <Stack.Screen
           name="StoryScreen" 
-          component={StoryScreen} 
+          component={StoryScreen}
+          options={({ route }) => ({ title: route.params.data.title })}
         />
       </Stack.Navigator>
     </NavigationContainer>
