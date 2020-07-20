@@ -1,19 +1,10 @@
 import React, { Component } from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { WebView } from 'react-native-webview';
 
 class Article extends Component {
-
   render() {
-    return (
-      <SafeAreaView>
-        <Text>
-        hello {this.props.url}
-        </Text>
-      </SafeAreaView>
-    );
+    return <WebView source={{ uri: this.props.url }}/>;
   }
-
 }
 
 export default Article;
