@@ -15,7 +15,7 @@ class FeedItem extends Component {
 
     return (
       <ListItem
-        onPress={() => this.props.navigation.navigate('StoryScreen', { id: d.id })}
+        onPress={() => this.props.navigation.navigate('StoryScreen', { data : d})}
         key={d.id}
         title={d.title}
         subtitle={subtitle}
