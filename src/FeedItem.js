@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Text, View } from 'react-native';
 import { ListItem } from 'react-native-elements'
 
-class FeedItem extends Component {
+class FeedItem extends PureComponent {
 
   render() {
     let d = this.props.data;
