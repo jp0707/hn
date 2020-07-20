@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.hn">
+  package="io.github.jp0707.hn">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

@@ -1,4 +1,4 @@
-package com.hn;
+package io.github.jp0707.hn;
 
 import com.facebook.react.ReactActivity;
 
