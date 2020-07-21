@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ActivityIndicator } from 'react-native';
 import { WebView } from 'react-native-webview';
 
-class Article extends Component {
+class ArticleTab extends Component {
   render() {
     return (
       <WebView
@@ -19,4 +19,4 @@ class Article extends Component {
   }
 }
 
-export default Article;
+export default ArticleTab;
