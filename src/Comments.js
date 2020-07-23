@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, FlatList } from 'react-native';
+import { AllHtmlEntities } from 'html-entities';
 
 class Comments extends Component {
 
@@ -31,7 +32,8 @@ class Comments extends Component {
   }
 
   createCommentText = (comment) => {
-    const stripped = this.stripHTML(comment);
+    const entities = new AllHtmlEntities();
+    const stripped = this.stripHTML(entities.decode(comment));
     if(this.state.isOpen){
       return (
         <Text 
