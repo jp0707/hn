@@ -57,14 +57,12 @@ class Comments extends Component {
   render() {
     const renderComment = ({ item }) => {
       // TODO: Figure out how to render HTML properly. Multiple WebViews don't work!
-      let text = this.createCommentText(item.content);
       let children_comments = null;
       if(this.state.isOpen){
         children_comments = <Comments comment={item} />;
       }
       return (
         <View style={{marginLeft: 16, borderLeftWidth: 1, paddingLeft: 4}}>
-          {text}
           {children_comments}
         </View>
       );
