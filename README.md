@@ -4,7 +4,7 @@ Learning react native.
 
 # Demo Video
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/MU4chvrRHHQ/0.jpg)](https://youtu.be/MU4chvrRHHQ "Hacker News App")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/woYhWfJ4cBo/0.jpg)](https://youtu.be/woYhWfJ4cBo "Hacker News App")
 
 # APK
 
